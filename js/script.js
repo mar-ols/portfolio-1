@@ -14,11 +14,11 @@ function toggleSections() {
           projectSection.style.display = "block";
           aboutSection.style.display = "none";
           aboutBtn.style.textDecoration = "line-through";
-          projectBtn.style.textDecoration = "none";
+          projectBtn.style.textDecoration = "underline";
         } else {
           projectSection.style.display = "none";
           aboutSection.style.display = "block";
-          aboutBtn.style.textDecoration = "none";
+          aboutBtn.style.textDecoration = "underline";
           projectBtn.style.textDecoration = "line-through";
         }
       });

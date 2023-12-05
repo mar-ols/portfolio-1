@@ -6,6 +6,7 @@
     <meta name="description" content="Portfolio for Marte B. Olsen" />
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/script.js"></script>
+    <script src="js/modal.js" async></script>
     <title>mBoe - Portfolio</title>
   </head>
   <body>
@@ -15,8 +16,8 @@
       </div>
     </header>
     <main>
-      <h1>My Portfolio</h1>
-      <section class="toggle-sections" id="toggle-sections">
+      <h1 class="centered">My Portfolio</h1>
+      <section class="toggle-section">
         <div>
           <button class="section-btn project-btn">Projects</button>
         </div>
@@ -24,21 +25,27 @@
           <button class="section-btn about-btn">About Me</button>
         </div>
       </section>
-      <div class="cards-container left-section sections">
-        <div>
-          <p></p>
-        </div>
+      <section class="cards-container left-section sections">
         <div class="card">
-          <h2 class="page-title">Community Science Museum</h2>
+          <h2 class="page-title centered">Community Science Museum</h2>
           <div class="card-sections">
             <div class="card-img">
-              <img
-                src="images/semester-project-ss.jpg"
-                alt="Screenshot of Community Science Museum website"
-                class="page-ss"
-              />
+              <div class="img">
+                <img
+                  src="images/semester-project-ss.jpg"
+                  alt="Thumbnail screenshot of Community Science Museum website"
+                  class="page-ss"
+                />
+              </div>
+              <div class="modal-container">
+                <img
+                  src="images/semester-project-ss.jpg"
+                  alt="Screenshot of Community Science Museum website"
+                  class="ss"
+                />
+              </div>
             </div>
-            <div>
+            <div class="card-desc">
               <h3>Semester Project 1</h3>
               <p class="page-description">
                 This is the first site I made while studying at Noroff. Our task
@@ -47,7 +54,7 @@
                 families with young children. It's created solely with HTML and
                 CSS.
               </p>
-              <div class="link-container">
+              <div class="link-container centered">
                 <a
                   href="https://github.com/mar-ols/semester_project1"
                   target="_blank"
@@ -65,16 +72,25 @@
         </div>
 
         <div class="card">
-          <h2 class="page-title">Rainy Days</h2>
+          <h2 class="page-title centered">Rainy Days</h2>
           <div class="card-sections">
             <div class="card-img">
-              <img
-                src="images/cross-course-ss.jpg"
-                alt="Screenshot of Rainy Days website"
-                class="page-ss"
-              />
+              <div class="img">
+                <img
+                  src="images/cross-course-ss.jpg"
+                  alt="Thumbnail screenshot of Rainy Days website"
+                  class="page-ss"
+                />
+              </div>
+              <div class="modal-container">
+                <img
+                  src="images/cross-course-ss.jpg"
+                  alt="Screenshot of Rainy Days website"
+                  class="ss"
+                />
+              </div>
             </div>
-            <div>
+            <div class="card-desc">
               <h3>Cross Course Project 1</h3>
               <p class="page-description">
                 For this project we were tasked to make make an eCommerce site
@@ -82,7 +98,7 @@
                 WordPress and fetched them through API. I chose the Rainy Days
                 brief to make an online store for rain jackets.
               </p>
-              <div class="link-container">
+              <div class="link-container centered">
                 <a
                   href="https://github.com/mar-ols/cross-course-project-mar-ols/tree/intdes"
                   target="_blank"
@@ -99,16 +115,25 @@
         </div>
 
         <div class="card">
-          <h2 class="page-title">Voyaging North</h2>
+          <h2 class="page-title centered">Voyaging North</h2>
           <div class="card-sections">
             <div class="card-img">
-              <img
-                src="images/project-exam-ss.jpg"
-                alt="Screenshot of Voyaging North website"
-                class="page-ss"
-              />
+              <div class="img">
+                <img
+                  src="images/project-exam-ss.jpg"
+                  alt="Thumbnail screenshot of Voyaging North website"
+                  class="page-ss"
+                />
+              </div>
+              <div class="modal-container">
+                <img
+                  src="images/project-exam-ss.jpg"
+                  alt="Screenshot of Voyaging North website"
+                  class="ss"
+                />
+              </div>
             </div>
-            <div>
+            <div class="card-desc">
               <h3>Project Exam 1</h3>
               <p class="page-description">
                 For our exam the first year we were to create a blog, using
@@ -117,7 +142,7 @@
                 WP API and chronicles a boat trip I went on along the coast from
                 the south of Norway, all the way north
               </p>
-              <div class="link-container">
+              <div class="link-container centered">
                 <a
                   href="https://github.com/Noroff-FEU-Assignments/project-exam-1-mar-ols"
                   target="_blank"
@@ -132,8 +157,8 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="about-container right-section sections">
+      </section>
+      <section class="about-container right-section sections">
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus
           dolorum unde aliquid veritatis atque eligendi ad expedita incidunt
@@ -278,8 +303,10 @@
           optio, cumque reprehenderit velit. Cum nam, nemo nostrum porro ratione
           minima labore.
         </p>
+      </section>
+      <div class="centered">
+        <p>© Marte Bøe</p>
       </div>
     </main>
-    <footer></footer>
   </body>
 </html>
