@@ -1,0 +1,121 @@
+@font-face {
+  font-family: "Jura";
+  src: url("../fonts/Jura-VariableFont_wght.ttf") format("truetype");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: "Jura";
+  background-image: url(../images/bg-test.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  margin: 0;
+}
+
+.cta {
+  font-family: inherit;
+  font-size: 18px;
+  background-color: #81c7cc;
+  border: 1px solid #000;
+  padding: 8px 30px;
+  margin-right: 25px;
+}
+
+main {
+  background-color: rgba(66, 66, 66, 0.3);
+  max-width: 1200px;
+  margin: auto;
+  border-radius: 40px;
+  border: 2px solid #000;
+}
+
+.big-logo {
+  max-width: 150px;
+  margin: auto;
+  padding: 20px 0 20px;
+}
+
+h1 {
+  text-decoration: underline;
+}
+
+.toggle-sections {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.section-btn {
+  font-family: inherit;
+  font-size: 22px;
+  font-weight: 800;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.about-btn {
+  text-decoration: line-through;
+}
+
+.sections {
+  margin-top: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  background-color: rgb(255, 247, 238, 0.9);
+  box-shadow: 6px 7px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  margin: 20px auto;
+  padding: 10px;
+}
+
+.card-img {
+  text-align: center;
+}
+
+h1,
+.page-title,
+.link-container {
+  text-align: center;
+}
+
+.card-sections > * {
+  padding: 10px;
+}
+
+.page-ss {
+  max-width: 375px;
+  border-radius: 10px;
+  border: 1px solid #000;
+}
+
+@media (min-width: 900px) {
+  .card-sections {
+    display: flex;
+  }
+
+  .page-ss {
+    max-width: 325px;
+  }
+
+  .card:hover {
+    transform: scale(103%);
+  }
+
+  .link-container {
+    text-align: left;
+  }
+}
