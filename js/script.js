@@ -13,13 +13,17 @@ function toggleSections() {
         if (index === 0) {
           projectSection.style.display = "block";
           aboutSection.style.display = "none";
-          aboutBtn.style.textDecoration = "line-through";
-          projectBtn.style.textDecoration = "underline";
+          aboutBtn.style.borderBottom = "1px solid black";
+          projectBtn.style.borderBottom = "none";
+          aboutBtn.style.backgroundColor = "#b69761";
+          projectBtn.style.backgroundColor = "#f3cc87";
         } else {
           projectSection.style.display = "none";
           aboutSection.style.display = "block";
-          aboutBtn.style.textDecoration = "underline";
-          projectBtn.style.textDecoration = "line-through";
+          projectBtn.style.borderBottom = "1px solid black";
+          aboutBtn.style.borderBottom = "none";
+          projectBtn.style.backgroundColor = "#b69761";
+          aboutBtn.style.backgroundColor = "#f3cc87";
         }
       });
     });

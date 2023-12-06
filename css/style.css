@@ -39,11 +39,9 @@ button {
 }
 
 main {
-  background-color: rgba(66, 66, 66, 0.3);
-  max-width: 1200px;
+  max-width: 1100px;
   margin: auto;
   border-radius: 40px;
-  border: 2px solid #000;
 }
 
 .big-logo {
@@ -54,31 +52,47 @@ main {
 
 h1 {
   text-decoration: underline;
+  margin-bottom: 60px;
 }
 
 .toggle-section {
   display: flex;
-  justify-content: space-evenly;
+  padding-left: 10%;
 }
 
 .section-btn {
   font-family: inherit;
   font-size: 22px;
   font-weight: 800;
-  border: none;
-  background-color: transparent;
+  border-top: 1px solid #000;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+  border-bottom: none;
+  height: 50px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  background-color: #f3cc87;
+  padding: 5px 10px;
+}
+
+.btn-bg {
+  background-color: #f3cc87;
 }
 
 .about-btn {
-  text-decoration: line-through;
+  border-bottom: 1px solid #000;
+  background-color: #b69761;
 }
 
-.project-btn {
-  text-decoration: underline;
+.cards-container,
+.about-container {
+  background-color: #f3cc87;
+  padding-bottom: 50px;
+  border-radius: 10px;
 }
 
 .sections {
-  margin-top: 20px;
+  padding-top: 50px;
 }
 
 .card {
@@ -126,6 +140,10 @@ h1 {
 .ss {
   max-width: 80%;
   margin-top: 4%;
+}
+
+footer {
+  padding-bottom: 30px;
 }
 
 @media (min-width: 900px) {
