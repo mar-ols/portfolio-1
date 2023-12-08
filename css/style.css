@@ -3,6 +3,11 @@
   src: url("../fonts/Jura-VariableFont_wght.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "Caveat";
+  src: url("../fonts/Caveat-VariableFont_wght.ttf") format("truetype");
+}
+
 * {
   box-sizing: border-box;
 }
@@ -13,7 +18,7 @@ img {
 
 body {
   font-family: "Jura";
-  background-image: url(../images/bg-test.webp);
+  background-image: url(../images/office-bg.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -120,7 +125,7 @@ h1 {
   padding: 10px;
 }
 
-.page-ss {
+.styled-img {
   border-radius: 10px;
   border: 1px solid #000;
 }
@@ -142,7 +147,38 @@ h1 {
   margin-top: 4%;
 }
 
-footer {
+.about-content {
+  margin: 30px;
+}
+
+.desktop-desc {
+  display: none;
+}
+
+.mobile-desc {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.mobile-desc > * {
+  flex: 1;
+  margin: auto;
+}
+
+.mobile-img {
+  max-width: 70%;
+}
+
+.email {
+  color: #287379;
+}
+
+.note {
+  max-width: 250px;
+}
+
+​footer {
   padding-bottom: 30px;
 }
 
@@ -170,5 +206,76 @@ footer {
 
   .link-container {
     text-align: left;
+  }
+}
+
+@media (min-width: 1000px) {
+  .mobile-desc {
+    display: none;
+  }
+
+  .desktop-desc {
+    display: block;
+  }
+
+  .about-content {
+    background-color: #fff7ee;
+  }
+
+  .list {
+    position: relative;
+    padding: 0;
+  }
+
+  .list li {
+    font-family: "Caveat";
+    font-size: 20px;
+    list-style: none;
+    border-bottom: 1px dotted #ccc;
+    text-indent: 20px;
+    padding: 10px;
+  }
+
+  ul .first-li {
+    border-bottom: none;
+  }
+
+  .lines {
+    border-left: 1px solid #ffaa9f;
+    border-right: 1px solid #ffaa9f;
+    float: left;
+    height: 900px;
+    margin-left: 40px;
+  }
+
+  .note {
+    cursor: pointer;
+    position: absolute;
+    left: 64%;
+    top: 340px;
+  }
+
+  .selfie {
+    position: absolute;
+    left: 53%;
+    top: 800px;
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 550px) {
+  main {
+    max-width: 95%;
+  }
+  .card {
+    max-width: 95%;
+  }
+
+  .about-content {
+    margin: 0;
+  }
+
+  .note {
+    max-width: 200px;
   }
 }
