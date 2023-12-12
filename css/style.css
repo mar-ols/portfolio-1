@@ -62,7 +62,7 @@ main {
 
 .h1-container {
   border-bottom: 2px solid #000;
-  max-width: 50%;
+  max-width: 90%;
   margin: 30px auto;
   display: flex;
   justify-content: center;
@@ -70,11 +70,11 @@ main {
 
 h1 {
   font-family: "Special Elite";
-  font-size: 40px;
+  font-size: 30px;
 }
 
 .span {
-  font-size: 60px;
+  font-size: 50px;
 }
 
 .toggle-section {
@@ -200,6 +200,14 @@ h1 {
 }
 
 @media (min-width: 1000px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  .span {
+    font-size: 60px;
+  }
+
   .card-sections {
     display: flex;
   }
