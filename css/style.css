@@ -8,6 +8,11 @@
   src: url("../fonts/Caveat-VariableFont_wght.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "Special Elite";
+  src: url("../fonts/SpecialElite-Regular.ttf") format("truetype");
+}
+
 * {
   box-sizing: border-box;
 }
@@ -55,9 +60,21 @@ main {
   padding: 20px 0 20px;
 }
 
+.h1-container {
+  border-bottom: 2px solid #000;
+  max-width: 50%;
+  margin: 30px auto;
+  display: flex;
+  justify-content: center;
+}
+
 h1 {
-  text-decoration: underline;
-  margin-bottom: 60px;
+  font-family: "Special Elite";
+  font-size: 40px;
+}
+
+.span {
+  font-size: 60px;
 }
 
 .toggle-section {
@@ -182,9 +199,6 @@ h1 {
   padding-bottom: 30px;
 }
 
-@media (min-width: 900px) {
-}
-
 @media (min-width: 1000px) {
   .card-sections {
     display: flex;
@@ -215,7 +229,8 @@ h1 {
     max-width: 1000px;
   }
 
-  .mobile-desc {
+  .mobile-desc,
+  .mobile {
     display: none;
   }
 
@@ -233,8 +248,7 @@ h1 {
   }
 
   .list li {
-    font-family: "Caveat";
-    font-size: 20px;
+    font-family: "Special Elite";
     list-style: none;
     border-bottom: 1px dotted #ccc;
     text-indent: 20px;
@@ -249,21 +263,25 @@ h1 {
     border-left: 1px solid #ffaa9f;
     border-right: 1px solid #ffaa9f;
     float: left;
-    height: 900px;
+    height: 1160px;
     margin-left: 40px;
+  }
+
+  .margin {
+    margin: 15px 0;
   }
 
   .note {
     cursor: pointer;
     position: absolute;
-    left: 64%;
-    top: 340px;
+    left: 66%;
+    top: 380px;
   }
 
   .selfie {
     position: absolute;
     left: 53%;
-    top: 800px;
+    top: 900px;
     max-width: 400px;
   }
 }
@@ -282,5 +300,15 @@ h1 {
 
   .note {
     max-width: 200px;
+  }
+}
+
+@media (min-width: 2200px) {
+  .note {
+    left: 60%;
+  }
+
+  .selfie {
+    left: 50%;
   }
 }
